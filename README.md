@@ -1,20 +1,21 @@
 # hk-for-unraid
 hk-for-unraid
 
-## fielbrowser
+## filebrowser
 
 see log files for radom admin passwd: 
-random: 5QPYU7RnSgXM
 
-### Chagen ownership (UID and GUI) for configration and database
+### Change ownership (UID and GUI) for configration and database
 chown -R 1000:1000 config
 chown -R 1000:1000 database
 
 ### Change ownership (UID and GID) recursively for your data
 chown -R 1000:1000 your-data
 
+## Recommendation
+- create a new user and use that (because of admin random password)
 
-
+## linuxserver 
 docker run \
   -v /path/to/srv:/srv \
   -v /path/to/database:/database \
